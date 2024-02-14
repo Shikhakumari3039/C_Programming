@@ -24,20 +24,21 @@
 //     average = (double) sum / n;
 //     printf("Average = %2lf", average);
 // }
-const int city=2;
-const int week=7;
-int main(){
-    int temperature[city][week];
-    for(int i=0; i<city; i++){
-        for(int j=0; j<week; j++){
-            printf("%d,%d", i+1, j+1);
-            scanf("%d",&temperature[i][j]);
-        }
-    }
-    printf("\nDisplaying values:\n\n");
-    for(int i=0; i<city; i++){
-        for(int j=0; j<week; j++){
-            printf("%d,%d =%d\n", i+1, j+1, temperature[i][j]);
-        }
-    }
-}
+// const int city=2;
+// const int week=7;
+// int main(){
+//     int temperature[city][week];
+//     for(int i=0; i<city; i++){
+//         for(int j=0; j<week; j++){
+//             printf("%d,%d", i+1, j+1);
+//             scanf("%d",&temperature[i][j]);
+//         }
+//     }
+//     printf("\nDisplaying values:\n\n");
+//     for(int i=0; i<city; i++){
+//         for(int j=0; j<week; j++){
+//             printf("%d,%d =%d\n", i+1, j+1, temperature[i][j]);
+//         }
+//     }
+// }
+
