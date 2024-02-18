@@ -22,15 +22,17 @@
 //     return 0;
 // }
 
-void min(int n, int arr[]){
-    int m=arr[0];
-    for(int i=1; i<n; i++){
-        if(m>arr[i]){
-            m = arr[i];
+void s(int n, int arr[]){
+    for(int j=0; j<n; j++){
+         if(arr[j]%2==0){
+             printf("%d ",arr[j]);
+        }
+        else{
+            printf("* ");
         }
     }
-    printf("min is %d", m);
 }
+
 int main(){
     int n, arr[100];
     printf("Enter the numbers: ");
@@ -38,5 +40,5 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d",&arr[i]);
     }
-    min(n, arr);
+    s(n,arr);
 }
