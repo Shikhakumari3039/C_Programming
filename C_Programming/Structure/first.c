@@ -17,7 +17,7 @@ int main(){
     shikha.fav_char='s';
     aditi.fav_char='a';
     shubham.fav_char='j';
-    strcpy(shikha.name, "shikha kumari student of the year");
+    strcpy(shikha.name, "Shikha kumari student of the year");
     printf("Shikha got %d marks\n", shikha.marks);
     printf("Shikha's name is %s\n", shikha.name);
     printf("Aditi got %d marks\n", aditi.marks);
