@@ -39,3 +39,56 @@
 //     printf("number = %d",a);
 // }
 
+// int main(){
+//     int a, b,c;
+//     scanf("%d%d%d",&a, &b, &c);
+//     if((a+b)>c){
+//         printf("Acute");
+//     }
+//     else{
+//         printf("Not Acute");
+//     }
+// }
+
+// int main(){
+//     int a,b,c;
+//     printf("Enter the numbers: ");
+//     scanf("%d%d%d",&a, &b, &c);
+//     if(a<=b){
+//         if(a<=c){
+//             printf("%d",a);
+//         }
+//         else{
+//             printf("%d",c);
+//         }
+//     }
+//     else{
+//         if(b<=c){
+//             printf("%d",b);
+//         }
+//         else{
+//             printf("%d",c);
+//         }
+//     }
+// }
+    
+// int main ()   { 
+// 		int a; 
+//         printf("Enter the number: ");
+//     scanf("%d",&a);
+//     if(a%6==0){
+//         if(a%4==0){
+//             printf("%d is divisible by 6 and 4\n",a);
+//         }
+//     }
+// }
+int main(){
+    int a, s;
+    s=0;
+    printf("Enter the number: ");
+    scanf("%d",&a);
+    while(!(a==-1)){
+        s=s+a;
+        scanf("%d",&a);
+    }
+}

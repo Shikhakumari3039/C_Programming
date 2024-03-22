@@ -95,3 +95,27 @@
 //     printf("a=%lf\n",a);
 //     printf("b=%lf",b);
 // }
+
+
+int main(){
+    int a,b,num,den;
+    int i;
+    printf("Enter the numbers: ");
+    scanf("%d%d",&a,&b);
+    if((b>=0)&&(a>=b)){
+        if(2*b>a){
+            b=a-b;
+        }
+        i=1;
+        num=1;
+        den=1;
+        while(1<=b){
+            num=num*(a-i+1);
+            den=den*(b-i+1);
+        }
+        printf("%d chose %d is %d", a,b,num/den);
+    }
+    else{
+        printf("Input out of range\n");
+    }
+}
