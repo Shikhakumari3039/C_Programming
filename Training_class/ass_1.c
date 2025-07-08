@@ -181,14 +181,14 @@
 // }
 
 // 18 write a program to find Pythagorean Theorem(Hypotenus).
-#include<math.h>
-int main(){
-    float a, b, c;
-    printf("Enter the values: ");
-    scanf("%f%f", &a, &b);
-    c= sqrt((a*a) + (b*b));
-    printf("Hypotenus = %.2f", c);
-}
+// #include<math.h>
+// int main(){
+//     float a, b, c;
+//     printf("Enter the values: ");
+//     scanf("%f%f", &a, &b);
+//     c= sqrt((a*a) + (b*b));
+//     printf("Hypotenus = %.2f", c);
+// }
 
 //19 write a program to find Electrical  Power
 // int main(){
@@ -279,48 +279,48 @@ int main(){
 // }
 
 // 25 write a program to read any month number in integer and display the number of days for this month.
-// int main(){
-//     int month;
-//     printf("Enter the months: ");
-//     scanf("%d", &month);
-//     switch(month){
-//         case 1:
-//             printf("January has 31 days.\n");
-//             break;
-//         case 2:
-//             printf("February has 28 or 29 days (leap year).\n");
-//             break;
-//         case 3:
-//             printf("March has 31 days.\n");
-//             break;
-//         case 4:
-//             printf("April has 30 days.\n");
-//             break;
-//         case 5:
-//             printf("May has 31 days.\n");
-//             break;
-//         case 6:
-//             printf("June has 30 days.\n");
-//             break;
-//         case 7:
-//             printf("July has 31 days.\n");
-//             break;
-//         case 8:
-//             printf("August has 31 days.\n");
-//             break;
-//         case 9:
-//             printf("September has 30 days.\n");
-//             break;
-//         case 10:
-//             printf("October has 31 days.\n");
-//             break;
-//         case 11:
-//             printf("November has 30 days.\n");
-//             break;
-//         case 12:
-//             printf("December has 31 days.\n");
-//             break;
-//         default:
-//             printf("Invalid month number");
-//     } 
-// }
+int main(){
+    int month;
+    printf("Enter the months: ");
+    scanf("%d", &month);
+    switch(month){
+        case 1:
+            printf("January has 31 days\n");
+            break;
+        case 2:
+            printf("February has 28 or 29 days (leap year)\n");
+            break;
+        case 3:
+            printf("March has 31 days\n");
+            break;
+        case 4:
+            printf("April has 30 days\n");
+            break;
+        case 5:
+            printf("May has 31 days\n");
+            break;
+        case 6:
+            printf("June has 30 days\n");
+            break;
+        case 7:
+            printf("July has 31 days\n");
+            break;
+        case 8:
+            printf("August has 31 days\n");
+            break;
+        case 9:
+            printf("September has 30 days\n");
+            break;
+        case 10:
+            printf("October has 31 days\n");
+            break;
+        case 11:
+            printf("November has 30 days\n");
+            break;
+        case 12:
+            printf("December has 31 days\n");
+            break;
+        default:
+            printf("Invalid month number");
+    } 
+}

@@ -1,4 +1,5 @@
 //27 write a program to check whether given number is posittive or negative.
+
 #include<stdio.h>
 // int main(){
 //     int a;
@@ -13,6 +14,7 @@
 // }
 
 //28 write a proram to find whether a given year is a leap year or not.
+
 // int main(){
 //     int year;
 //     printf("Enter the year: ");
@@ -26,6 +28,7 @@
 // }
 
 // 29 write a program to read the age of a candidate and detrmine whether it is eligible for casting his or his own vote.
+
 // int main(){
 //     int a;
 //     printf("Enter the age: ");
@@ -39,6 +42,7 @@
 // } 
 
 // 30 write a program to read the value of an integer m and display the value of n is 1 when m is larger than 0, 0 when m is 0 and -1 when m is less than 0.
+
 // int main(){
 //     int m, n;
 //     printf("Enter the integers: ");
@@ -53,10 +57,10 @@
 //         n=-1;
 //     }
 //     printf("n= %d", n);
-
 // }
 
-// 31 write a program to accept the height of a person in cm and categorize the person according to their height
+// 31 write a program to accept the height of a person in cm and categorize the person according to their height.
+
 // int main() {
 //     float height;
 //     printf("Enter the height of the person: ");
@@ -75,7 +79,8 @@
 //     }
 // }
 
-// 32 write a program to find the largest of three numbers
+// 32 write a program to find the largest of three numbers.
+
 // int main(){
 //     int a, b, c;
 //     printf("Enter the number: ");
@@ -92,6 +97,7 @@
 // }
 
 // 33 write a program to accept a coordinates point in a XY coordinate system and determine in which quadrant the coordinate point lies.
+
 // int main(){
 //     int x, y;
 //     printf("Enter the coordinates: ");
@@ -114,6 +120,7 @@
 // }
 
 //34 write a program to find the roots of quadratic equation.
+
 // #include<math.h>
 // int main(){
 //     float a, b, c, x1, x2, d;
@@ -126,7 +133,6 @@
 //         x2=x1;
 //         printf("Root1=%f\n",x1);
 //         printf("Root2= %f\n",x2);
-
 //     }
 //     else if(d>0){
 //         printf("roots are real and distinct");
@@ -141,6 +147,7 @@
 // }
 
 // 35 write a program simple calculator using switch case.
+
 // void main(){
 //     int choice;
 //     float a,b;
@@ -181,6 +188,7 @@
 //If 'W', ask for the withdrawal amount. Check if the withdrawal amount is less than or equal to the balance. If yes, proceed with withdrawal: otherwise, print "Insuficient balance 
 //For any other input, print "Invalid choice".
 //Alter the transaction (or error), always print the current balance
+
 // int main() {
 //     float balance = 1000.00;
 //     char choice;
@@ -220,7 +228,8 @@
 // 37 Question 37: Create a simple menu for a program that rofculates the arms of different shape The menu thould offert
 // Calculate Area of Circle
 // Calculate Area of Rectangle
-// Exit Ask the aur for their choice. Based on the choice, prompt for my dimensions and calculate the area. Use a switch statement for menu handling. Assume pi=3.14
+// Exit Ask the aur for their choice. Based on the choice, prompt for my dimensions and calculate the area. Use a switch statement for menu handling. Assume pi=3.14.
+
 // int main() {
 //     int choice;
 //     float radius, length, breadth, area;
@@ -261,36 +270,38 @@
 //Regular Customer:
 //Parchase ge1000:5% discount
 //Purchase $\< 1000$ No discount
-//Write a C program that takes the purchase amount and a character indicating membership status ('P' for Premium, "R' for Regular) as input. Calculate and print the final payable amount after applying the discount
-int main() {
-    float purchaseAmount, discount = 0, finalAmount;
-    char membership;
-    printf("Enter purchase amount: ");
-    scanf("%f", &purchaseAmount);
-    printf("Enter member: ");
-    scanf(" %c", &membership); 
-    if (membership == 'P' || membership == 'p') {
-        if (purchaseAmount >= 1000) {
-            discount = 0.15 * purchaseAmount;
-        } else {
-            discount = 0.10 * purchaseAmount;
-        }
-    } else if (membership == 'R' || membership == 'r') {
-        if (purchaseAmount >= 1000) {
-            discount = 0.05 * purchaseAmount;
-        } else {
-            discount = 0.00;
-        }
-    } else {
-        printf("Invalid membership input.\n");
-    }
-    finalAmount = purchaseAmount - discount;
-    printf("Discount: %.2f\n", discount);
-    printf("Amount to pay: %.2f\n", finalAmount);
-}
+//Write a C program that takes the purchase amount and a character indicating membership status ('P' for Premium, "R' for Regular) as input. Calculate and print the final payable amount after applying the discount.
+
+// int main() {
+//     float purchaseAmount, discount = 0, finalAmount;
+//     char membership;
+//     printf("Enter purchase amount: ");
+//     scanf("%f", &purchaseAmount);
+//     printf("Enter member: ");
+//     scanf(" %c", &membership); 
+//     if (membership == 'P' || membership == 'p') {
+//         if (purchaseAmount >= 1000) {
+//             discount = 0.15 * purchaseAmount;
+//         } else {
+//             discount = 0.10 * purchaseAmount;
+//         }
+//     } else if (membership == 'R' || membership == 'r') {
+//         if (purchaseAmount >= 1000) {
+//             discount = 0.05 * purchaseAmount;
+//         } else {
+//             discount = 0.00;
+//         }
+//     } else {
+//         printf("Invalid membership input");
+//     }
+//     finalAmount = purchaseAmount - discount;
+//     printf("Discount: %f\n", discount);
+//     printf("Amount to pay: %f\n", finalAmount);
+// }
 
 
 // 39 write a program check a loan eligibility.
+
 // int main() {
 //     int age, experience;
 //     float income;
@@ -313,7 +324,6 @@ int main() {
 //     int a, b, c;
 //     printf("Enter the sides:");
 //     scanf("%d%d%d", &a, &b, &c);
-
 //     if(a == b&& b== c&& a==c){
 //         printf("equilateral triangle");
 //     }
@@ -325,7 +335,8 @@ int main() {
 //     }
 // }
 
-// 41 write a program print factorial of a  number
+// 41 write a program print factorial of a  number.
+
 // int main(){
 //     int n, i, fac=1;
 //     printf("Enter the numbers: ");
@@ -341,7 +352,8 @@ int main() {
 //     }
 // }
 
-// 42 write a program reverse a given number
+// 42 write a program reverse a given number.
+
 // int main(){
 //     int a, d1, d2, d3, rev;
 //     printf("Enter the number:");
@@ -353,7 +365,8 @@ int main() {
 //     printf("rev = %d ", rev);
 // }
 
-// 43 write a program to find the sum of digits of a number
+// 43 write a program to find the sum of digits of a number.
+
 // int main(){
 //     int a, digit, sum=0;
 //     printf("Enter the numbers: ");
@@ -372,20 +385,20 @@ int main() {
 //         }
 //         printf("Sum  = %d", sum); 
 //     }
-
 // }
 
 //44 write a program to print fibonacci series up to n terms.
-// int main() {
-//     int n, i;
-//     int a = 0, b = 1, next;
-//     printf("Enter the number of terms: ");
-//     scanf("%d", &n);
-//     printf("Fibonacci  %d: ", n);
-//     for(i = 1; i <= n; i++) {
-//         printf("%d ", a);
-//         next = a + b;
-//         a = b;
-//         b = next;
-//     }
-// }
+
+int main() {
+    int n, i;
+    int a = 0, b = 1, next;
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+    printf("Fibonacci  %d: ", n);
+    for(i = 1; i <= n; i++) {
+        printf("%d ", a);
+        next = a + b;
+        a = b;
+        b = next;
+    }
+}
