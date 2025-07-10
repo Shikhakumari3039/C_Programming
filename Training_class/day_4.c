@@ -63,23 +63,80 @@
 // }
 
 // write a program to reverse an array 
+// int main(){
+//     int a[100], n, i, swap=0, f, l;
+//     printf("Enter the number: ");
+//     scanf("%d",&n);
+//     printf("Enter the element of array:\n ");
+//     for(i=0; i<n; i++){
+//         scanf("%d",&a[i]);
+//     }
+//     for(i=0; i<n/2; i++){
+//     swap=a[i];
+//     a[i]=a[n-1-i];
+//     a[n-1-i]=swap;
+//     }
+//      printf("Reversed array:\n");
+//     for(i = 0; i < n; i++) {
+//         printf("%d ", a[i]);
+//     }
+// }
+
+// write a program to reverse a array using pointer
+// int main() {
+//     int a[100], n, i, temp;
+//     int *p, *q;
+//     printf("Enter the number of elements: ");
+//     scanf("%d", &n);
+//     printf("Enter the elements:\n");
+//     for(i = 0; i < n; i++) {
+//         scanf("%d", &a[i]);
+//     }
+//     p = a;            
+//     q = a + n - 1;    
+//     while(p < q) {
+//         temp = *p;
+//         *p = *q;
+//         *q = temp;
+
+//         p++;
+//         q--;
+//     }
+//     printf("Reversed array:\n");
+//     for(i = 0; i < n; i++) {
+//         printf("%d ", a[i]);
+//     }
+// }
+
+// sorting array, acesending , desecding,
 int main(){
-    int a[100], n, i, swap=0, f, l;
-    printf("Enter the number: ");
-    scanf("%d",&n);
-    printf("Enter the element of array: ");
+    int a[100], n, i, j, temp;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+    printf("Enter the elements:\n");
+    for(i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    } 
     for(i=0; i<n; i++){
-        scanf("%d",&a[i]);
+       for (j=i+1; j<n; j++){
+        if(a[i]>a[j]){
+            temp= a[i];
+            a[i] = a[j];
+            a[j]= temp;
+        }
+       } 
     }
-    for(i=0;i++){
-    swap=a[i];
-    a[i]=a[n-1-1];
-    a[n-1-1]=swap;
+    printf("\nSorted in Ascending Order:\n");
+    for(i = 0; i < n; i++) {
+        printf("%d ", (a[i])); 
     }
 }
-// write a program to reverse a array using pointer
 
+//Bubble sort
 
+//second largest
+//to find duplicate or unique element in arry
+// binary searching
 
 
 
