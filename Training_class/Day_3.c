@@ -102,7 +102,7 @@
 //         printf("\n");
 //     }
 // }
-// write a program to print    *
+// write a program to print       *
 //                                * *
 //                                * * * *
 //                                * * * * * * *
