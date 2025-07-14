@@ -88,7 +88,7 @@
 //     return 0;
 // }
 
-//write a program to multiplication of 2 matrixs
+// write a program to multiplication of 2 matrixs
 // int main() {
 //     int r, c, i, j;
 //     int m1[100][100], m2[100][100], m3[100][100], m4[100][100];
@@ -200,17 +200,19 @@
 // }
 
 //call by address
-int fact(int*);
-int fact(int *n) {
-    int i, f = 1;
-    for (i = 1; i <= *n; i++) {
-        f = f * i;
-    }
-    return f;
-}
-int main() {
-    int n;
-    printf("Enter the value of n: ");
-    scanf("%d", &n);
-    printf("Factorial = %d\n", fact(&n));
-}
+// int fact(int*);
+// int fact(int *n) {
+//     int i, f = 1;
+//     for (i = 1; i <= *n; i++) {
+//         f = f * i;
+//     }
+//     return f;
+// }
+// int main() {
+//     int n;
+//     printf("Enter the value of n: ");
+//     scanf("%d", &n);
+//     printf("Factorial = %d\n", fact(&n));
+// }
+
+// call by values

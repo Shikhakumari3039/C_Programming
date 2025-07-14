@@ -108,9 +108,10 @@
 //         printf("%d ", a[i]);
 //     }
 // }
-// OR
 
-// sorting using pointer
+// // OR
+
+// // sorting using pointer
 // int main() {
 //     int a[100], n, i, j, temp, *p;
 //     printf("Enter the number of elements: ");
@@ -157,15 +158,14 @@
 //     }
 // }
 
-
 // write a program to merge two array then display in sorting array
-int main(){
-    int a1[100], a2[100], n, i,j, merged;
-    printf("Enter the elements: ");
-    scanf("%d", &n);
-    for(i=0; i<i; i++){
-        merged[i]= a1[i];
-    }
-    for(i=0;)
+// int main(){
+//     int a1[100], a2[100], n, i,j, merged;
+//     printf("Enter the elements: ");
+//     scanf("%d", &n);
+//     for(i=0; i<i; i++){
+//         merged[i]= a1[i];
+//     }
+//     for(i=0;)
 
-}
+// }

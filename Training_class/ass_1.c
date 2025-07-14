@@ -1,7 +1,7 @@
 //Assignment_1
 //01 write a program to find the area of a rectangle
 
-#include<stdio.h>
+// #include<stdio.h>
 // int main(){
 //     int a,b, c;
 //     printf("Enter the values:");
@@ -21,7 +21,7 @@
 //     printf("c=%d",c);
 // }
 
-//3 write a program to find the area of circle
+// 3 write a program to find the area of circle
 
 // int main(){
 //     float r, c;
@@ -32,7 +32,7 @@
 
 // }
 
-//4 write a program to find circumfrence of a circle
+// 4 write a program to find circumfrence of a circle
 // int main(){
 //     float r, c;
 //     printf("Enter the values: ");
@@ -51,7 +51,8 @@
 //     printf("Area=%d",area);
 // }
 
-//6 write a program to find simple interest
+
+// 6 write a program to find simple interest
 // int main(){
 //     int p, r, t;
 //     float si;
@@ -61,7 +62,7 @@
 //     printf("SI =%f",si);
 // }
 
-//7 write a program to find celsius to fahrenheit conversion
+// 7 write a program to find celsius to fahrenheit conversion
 // int main(){
 //     float f, c;
 //     printf("Enter the Celsius: ");
@@ -80,7 +81,7 @@
 //     printf("C=%f", c);
 // }
 
-//9 write a program to find the volume of a cube
+// 9 write a program to find the volume of a cube
 // int main(){
 // int v, a;
 // printf("Enter the values: ");
@@ -89,7 +90,7 @@
 // printf("Volume =%d", v);
 // }
 
-//10 write a program to find volumne of a sphere
+// 10 write a program to find volumne of a sphere
 // int main(){
 //     float r, v;
 //     printf("Enter the values: ");
@@ -98,7 +99,7 @@
 //     printf("Volumn = %f", v);
 // } 
 
-//11 write a program to find average of three numbers
+// 11 write a program to find average of three numbers
 // int main(){
 //     int a, b, c, avg;
 //     printf("Enter the numbers: ");
@@ -190,7 +191,7 @@
 //     printf("Hypotenus = %.2f", c);
 // }
 
-//19 write a program to find Electrical  Power
+// 19 write a program to find Electrical  Power
 // int main(){
 //     int P, v, i;
 //     printf("Enter the volts and current: ");
@@ -210,7 +211,7 @@
 //     printf("max number=%d",max);
 // }
 
-//21 write a program to accept two integers and check whether they are equal or not
+// 21 write a program to accept two integers and check whether they are equal or not
 // int main(){
 //     int a, b;
 //     printf("Enter the Numbers: ");
@@ -241,7 +242,7 @@
 
 // }
 
-//23 write a program to print the electricity bill of a given customer
+// 23 write a program to print the electricity bill of a given customer
 // int main(){
 //     int customer_id, units;
 //     float bill_amount;
@@ -278,49 +279,133 @@
 //     }
 // }
 
-// 25 write a program to read any month number in integer and display the number of days for this month.
-int main(){
-    int month;
-    printf("Enter the months: ");
-    scanf("%d", &month);
-    switch(month){
-        case 1:
-            printf("January has 31 days\n");
-            break;
-        case 2:
-            printf("February has 28 or 29 days (leap year)\n");
-            break;
-        case 3:
-            printf("March has 31 days\n");
-            break;
-        case 4:
-            printf("April has 30 days\n");
-            break;
-        case 5:
-            printf("May has 31 days\n");
-            break;
-        case 6:
-            printf("June has 30 days\n");
-            break;
-        case 7:
-            printf("July has 31 days\n");
-            break;
-        case 8:
-            printf("August has 31 days\n");
-            break;
-        case 9:
-            printf("September has 30 days\n");
-            break;
-        case 10:
-            printf("October has 31 days\n");
-            break;
-        case 11:
-            printf("November has 30 days\n");
-            break;
-        case 12:
-            printf("December has 31 days\n");
-            break;
-        default:
-            printf("Invalid month number");
-    } 
+//  25 write a program to read any month number in integer and display the number of days for this month.
+// #include<stdio.h>
+//  int main(){
+//     int month;
+//     printf("Enter the months: ");
+//     scanf("%d", &month);
+//     switch(month){
+//         case 1:
+//             printf("January has 31 days\n");
+//             break;
+//         case 2:
+//             printf("February has 28 or 29 days (leap year)\n");
+//             break;
+//         case 3:
+//             printf("March has 31 days\n");
+//             break;
+//         case 4:
+//             printf("April has 30 days\n");
+//             break;
+//         case 5:
+//             printf("May has 31 days\n");
+//             break;
+//         case 6:
+//             printf("June has 30 days\n");
+//             break;
+//         case 7:
+//             printf("July has 31 days\n");
+//             break;
+//         case 8:
+//             printf("August has 31 days\n");
+//             break;
+//         case 9:
+//             printf("September has 30 days\n");
+//             break;
+//         case 10:
+//             printf("October has 31 days\n");
+//             break;
+//         case 11:
+//             printf("November has 30 days\n");
+//             break;
+//         case 12:
+//             printf("December has 31 days\n");
+//             break;
+//         default:
+//             printf("Invalid month number");
+//     } 
+// }
+
+// wap according to gregorian calendar 01/01/1990 was monday , enter a random year & return what is the day in that year of jan 1st using function
+// #include <stdio.h>
+// int isLeapYear(int year) {
+//     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+//         return 1;
+//     return 0;
+// }
+// int main() {
+//     int year, days = 0;
+//     printf("Enter a year: ");
+//     scanf("%d", &year);
+//     if (year > 1990) {
+//         for (int i = 1990; i < year; i++) {
+//             days += isLeapYear(i) ? 366 : 365;
+//         }
+//     } else {
+//         for (int i = year; i < 1990; i++) {
+//             days -= isLeapYear(i) ? 366 : 365;
+//         }
+//     }
+//     int day = (days % 7 + 7) % 7;
+//     char *week[7] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+//     printf("January 1, %d is a %s\n", year, week[day]);
+// }
+
+
+// #include <stdio.h>w
+// #include <math.h>
+
+// int arm(int num, int dc) {
+//     int temp = num;
+//     int sum = 0;
+//     while (temp != 0) {
+//         sum += pow(temp % 10, dc);
+//         temp /= 10;
+//     }
+//     return sum;
+// }
+// int main() {
+//     int num = 9474;
+//     int org = num;
+//     int count = 0;
+//     while (num != 0) {
+//         count++;
+//         num /= 10;
+//     }
+//     int result = arm(org, count);
+//     if (result == org) {
+//         printf("%d is an Armstrong number.\n", org);
+//     } else {
+//         printf("%d is NOT an Armstrong number.\n", org);
+//     }
+
+//     return 0;
+//}
+
+#include <stdio.h>
+
+int main() {
+    int year, i, days = 0;
+    printf("Enter a year: ");
+    scanf("%d", &year);
+    if (year > 1990) {
+        for (i = 1990; i < year; i++) {
+            if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0))
+                days += 366;
+            else
+                days += 365;
+        }
+    } else {
+        for (i = year; i < 1990; i++) {
+            if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0))
+                days -= 366;
+            else
+                days -= 365;
+        }
+    }
+    int day = (days % 7 + 7) % 7;
+    char *week[7] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+    printf("January 1, %d is a %s\n", year, week[day]);
 }
+

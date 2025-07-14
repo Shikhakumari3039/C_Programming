@@ -1,6 +1,6 @@
-//27 write a program to check whether given number is posittive or negative.
+// 27 write a program to check whether given number is posittive or negative.
 
-#include<stdio.h>
+// #include<stdio.h>
 // int main(){
 //     int a;
 //     printf("Enter the numbers: ");
@@ -13,8 +13,8 @@
 //     }
 // }
 
-//28 write a proram to find whether a given year is a leap year or not.
-
+// 28 write a proram to find whether a given year is a leap year or not.
+// #include<stdio.h>
 // int main(){
 //     int year;
 //     printf("Enter the year: ");
@@ -28,7 +28,7 @@
 // }
 
 // 29 write a program to read the age of a candidate and detrmine whether it is eligible for casting his or his own vote.
-
+// #include<stdio.h>
 // int main(){
 //     int a;
 //     printf("Enter the age: ");
@@ -42,7 +42,7 @@
 // } 
 
 // 30 write a program to read the value of an integer m and display the value of n is 1 when m is larger than 0, 0 when m is 0 and -1 when m is less than 0.
-
+// #include<stdio.h>
 // int main(){
 //     int m, n;
 //     printf("Enter the integers: ");
@@ -60,7 +60,7 @@
 // }
 
 // 31 write a program to accept the height of a person in cm and categorize the person according to their height.
-
+// #include<stdio.h>
 // int main() {
 //     float height;
 //     printf("Enter the height of the person: ");
@@ -80,7 +80,7 @@
 // }
 
 // 32 write a program to find the largest of three numbers.
-
+// #include<stdio.h>
 // int main(){
 //     int a, b, c;
 //     printf("Enter the number: ");
@@ -97,7 +97,7 @@
 // }
 
 // 33 write a program to accept a coordinates point in a XY coordinate system and determine in which quadrant the coordinate point lies.
-
+// #include<stdio.h>
 // int main(){
 //     int x, y;
 //     printf("Enter the coordinates: ");
@@ -119,8 +119,8 @@
 //     }
 // }
 
-//34 write a program to find the roots of quadratic equation.
-
+// 34 write a program to find the roots of quadratic equation.
+// #include<stdio.h>
 // #include<math.h>
 // int main(){
 //     float a, b, c, x1, x2, d;
@@ -147,7 +147,7 @@
 // }
 
 // 35 write a program simple calculator using switch case.
-
+// #include<stdio.h>
 // void main(){
 //     int choice;
 //     float a,b;
@@ -184,11 +184,12 @@
 // }
 
 // 36 Simulate a very basic ATM. Assume a fixed initial balance of 1000.00. Ask the user if they want to 'D' (Deposit) or 'W' (Withdraw)
-//If 'D', ask for the deposit amount and add it to the balance.
-//If 'W', ask for the withdrawal amount. Check if the withdrawal amount is less than or equal to the balance. If yes, proceed with withdrawal: otherwise, print "Insuficient balance 
-//For any other input, print "Invalid choice".
-//Alter the transaction (or error), always print the current balance
+// If 'D', ask for the deposit amount and add it to the balance.
+// If 'W', ask for the withdrawal amount. Check if the withdrawal amount is less than or equal to the balance. If yes, proceed with withdrawal: otherwise, print "Insuficient balance 
+// For any other input, print "Invalid choice".
+// Alter the transaction (or error), always print the current balance
 
+// #include<stdio.h>
 // int main() {
 //     float balance = 1000.00;
 //     char choice;
@@ -229,7 +230,7 @@
 // Calculate Area of Circle
 // Calculate Area of Rectangle
 // Exit Ask the aur for their choice. Based on the choice, prompt for my dimensions and calculate the area. Use a switch statement for menu handling. Assume pi=3.14.
-
+// #include<stdio.h>
 // int main() {
 //     int choice;
 //     float radius, length, breadth, area;
@@ -263,15 +264,15 @@
 //     }
 // }
 
-//38 A stare offers disnutzts based on the total perthave ameront and whether customer is a preminem membre
-//Premium Member:
-//Purchase ge1000: 15% discount
-//Purchase $\<1000$: 10% discount
-//Regular Customer:
-//Parchase ge1000:5% discount
-//Purchase $\< 1000$ No discount
-//Write a C program that takes the purchase amount and a character indicating membership status ('P' for Premium, "R' for Regular) as input. Calculate and print the final payable amount after applying the discount.
-
+// 38 A stare offers disnutzts based on the total perthave ameront and whether customer is a preminem membre
+// Premium Member:
+// Purchase ge1000: 15% discount
+// Purchase $\<1000$: 10% discount
+// Regular Customer:
+// Parchase ge1000:5% discount
+// Purchase $\< 1000$ No discount
+// Write a C program that takes the purchase amount and a character indicating membership status ('P' for Premium, "R' for Regular) as input. Calculate and print the final payable amount after applying the discount.
+// #include<stdio.h>
 // int main() {
 //     float purchaseAmount, discount = 0, finalAmount;
 //     char membership;
@@ -301,7 +302,7 @@
 
 
 // 39 write a program check a loan eligibility.
-
+// #include<stdio.h>
 // int main() {
 //     int age, experience;
 //     float income;
@@ -319,7 +320,8 @@
 // }
 
 
-//40 write a program triangles to check isoscles, scalene, or equileteral
+// 40 write a program triangles to check isoscles, scalene, or equileteral
+// #include<stdio.h>
 // int main(){
 //     int a, b, c;
 //     printf("Enter the sides:");
@@ -336,7 +338,7 @@
 // }
 
 // 41 write a program print factorial of a  number.
-
+// #include<stdio.h>
 // int main(){
 //     int n, i, fac=1;
 //     printf("Enter the numbers: ");
@@ -353,7 +355,7 @@
 // }
 
 // 42 write a program reverse a given number.
-
+// #include<stdio.h>
 // int main(){
 //     int a, d1, d2, d3, rev;
 //     printf("Enter the number:");
@@ -366,7 +368,7 @@
 // }
 
 // 43 write a program to find the sum of digits of a number.
-
+// #include<stdio.h>
 // int main(){
 //     int a, digit, sum=0;
 //     printf("Enter the numbers: ");
@@ -387,18 +389,18 @@
 //     }
 // }
 
-//44 write a program to print fibonacci series up to n terms.
-
-int main() {
-    int n, i;
-    int a = 0, b = 1, next;
-    printf("Enter the number of terms: ");
-    scanf("%d", &n);
-    printf("Fibonacci  %d: ", n);
-    for(i = 1; i <= n; i++) {
-        printf("%d ", a);
-        next = a + b;
-        a = b;
-        b = next;
-    }
-}
+// 44 write a program to print fibonacci series up to n terms.
+// #include<stdio.h>
+// int main() {
+//     int n, i;
+//     int a = 0, b = 1, next;
+//     printf("Enter the number of terms: ");
+//     scanf("%d", &n);
+//     printf("Fibonacci  %d: ", n);
+//     for(i = 1; i <= n; i++) {
+//         printf("%d ", a);
+//         next = a + b;
+//         a = b;
+//         b = next;
+//     }
+// }

@@ -155,6 +155,7 @@
 //         printf("\n");  
 //     }
 // }
+
 // write program to make a diamond using *
 // int main() {
 //     int n, i, j, space;
