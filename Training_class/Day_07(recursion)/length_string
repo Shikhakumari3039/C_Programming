@@ -1,0 +1,12 @@
+//Write a program  TO FIND THE LENGTH OF STRING
+#include<string.h>
+void main(){
+    char str[100];
+    int len=0;
+    printf("Enter the number: ");
+    gets(str);
+    while(str[len]!='\0'){
+        len++;
+    }
+    printf("Length of string: %d\n", len);
+}

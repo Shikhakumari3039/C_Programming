@@ -1,3 +1,4 @@
+//Write a program in C to search an element in an array using linear search.
 #include<stdio.h>
 int main(){
     int a[100], n;
