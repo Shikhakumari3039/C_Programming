@@ -1,4 +1,4 @@
-//linear queue for insertion
+// circular queue
 #include<stdio.h>
 #define size 5
 int q[size];
@@ -6,41 +6,47 @@ int data, f=-1, r=-1;
 void insert(){
     printf("Enter a data\n");
     scanf("%d", &data);
-    if(r==size-1){
-        printf("Full");
+    if((r+1)%size==f){
+        printf("Overflow");
+        return;
     }
-    else if(f==-1 && r==-1){
+    else if(f==-1 &&r==-1){
         r=f=0;
         q[r]=data;
     }
     else{
-        r++;
+        r=(r+1)%size;
         q[r]=data;
-    }
-}
-void display(){
-    int i;
-    if(f==-1 && r==-1){
-        printf("Empty");
-    }
-    else{
-        for (int i = f; i <= r; i++) {
-            printf("%d ", q[i]);
-        }
     }
 }
 void delete(){
     if(f==-1 &&r==-1){
-        printf("EMpty");
+        printf("Queue is empty\n");
+        return;
     }
+    printf(Deleted element =%d\n, q[f]);
     else if(f==r){
-        data=q[f];
         f=r=-1;
     }
     else{
-        data=q[f];
-        f++;
+        f= (f+1)%size;
     } 
+}
+void display(){
+    int i=f;
+    if(f==-1 && r==-1){
+        printf("under flow");
+    }
+    else{
+    //     do{
+    //         printf("%d", q[i]);
+    //         i= (i+1) % size;
+    //     }
+    //     while(i! = (r+1) % size);
+    for (int i = f; i <= r; i++) {
+            printf("%d ", q[i]);
+        }
+    }
 }
 void main(){
     int a;
