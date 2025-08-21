@@ -1,43 +1,54 @@
-//write a program to merge two array in single sorted array
+// write a program to merge sort
+
 #include <stdio.h>
-void mergeAndSort(int arr1[], int n1, int arr2[], int n2, int merged[]) {
-    int i, j, k;
-    for (i = 0; i < n1; i++) {
-        merged[i] = arr1[i];
-    }
-    for (j = 0; j < n2; j++) {
-        merged[i + j] = arr2[j];
-    }
-    int size = n1 + n2;
-    for (i = 0; i < size - 1; i++) {
-        for (j = 0; j < size - i - 1; j++) {
-            if (merged[j] > merged[j + 1]) {
-                int temp = merged[j];
-                merged[j] = merged[j + 1];
-                merged[j + 1] = temp;
-            }
+void merge(int arr[], int left, int mid, int right) {
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
+    int L[n1], R[n2];
+    for (int i = 0; i < n1; i++)
+        L[i] = arr[left + i];
+    for (int j = 0; j < n2; j++)
+        R[j] = arr[mid + 1 + j];
+
+    int i = 0, j = 0, k = left;
+    // Merge temp arrays into original
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            arr[k++] = L[i++];
+        } else {
+            arr[k++] = R[j++];
         }
     }
+    // Copy remaining elements
+    while (i < n1) {
+        arr[k++] = L[i++];
+    }
+    while (j < n2) {
+        arr[k++] = R[j++];
+    }
 }
-int main() {
-    int arr1[50], arr2[50], merged[100];
-    int n1, n2, i;
-    printf("Enter size of first array: ");
-    scanf("%d", &n1);
-    printf("Enter elements of first array: ");
-    for (i = 0; i < n1; i++) {
-        scanf("%d", &arr1[i]);
+// Merge sort function (Divide and Conquer)
+void mergeSort(int arr[], int left, int right) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+        mergeSort(arr, left, mid);
+        mergeSort(arr, mid + 1, right);
+        merge(arr, left, mid, right);
     }
-    printf("Enter size of second array: ");
-    scanf("%d", &n2);
-    printf("Enter elements of second array: ");
-    for (i = 0; i < n2; i++) {
-        scanf("%d", &arr2[i]);
-    }
-    mergeAndSort(arr1, n1, arr2, n2, merged);
-    printf("Merged and Sorted Array: ");
-    for (i = 0; i < n1 + n2; i++) {
-        printf("%d ", merged[i]);
+}
+void printArray(int arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);          // Added space for readability
     }
     printf("\n");
+}
+int main() {
+    int arr[] = {38, 27, 43, 3, 9, 82, 10};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    printf("Original array:\n");
+    printArray(arr, size);
+    mergeSort(arr, 0, size - 1);
+    printf("Sorted array:\n");
+    printArray(arr, size);
+
 }
