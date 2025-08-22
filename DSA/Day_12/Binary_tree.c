@@ -2,33 +2,57 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Define structure for a tree node
+// Define the structure
 struct Node {
     int data;
     struct Node *left;
     struct Node *right;
 };
-
-// Function to create a new node
-struct Node* createNode(int value) {
-    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
-    newNode->data = value;
-    newNode->left = NULL;
-    newNode->right = NULL;
-    return newNode;
+struct Node *root= NULL;
+struct Node* create() {
+    struct Node* temp;
+    temp = (struct Node*)malloc(sizeof(struct Node));
+    printf("Enter the data: ");
+    scanf("%d", &temp->data);
+    temp->left = NULL;
+    temp->right = NULL;
+    return temp;
 }
-
+void inorder(struct Node *root) {
+    if(root != NULL) {
+        inorder(root->left);
+        printf("%d ", root->data);
+        inorder(root->right);
+    }
+}
+void preorder(struct Node *root) {
+    if(root != NULL) {
+        printf("%d ", root->data);
+        preorder(root->left);
+        preorder(root->right);
+    }
+}
+void postorder(struct Node *root) {
+    if(root != NULL) {
+        postorder(root->left);
+        postorder(root->right);
+        printf("%d ", root->data);
+    }
+}
 int main() {
-    // Create root node
-    struct Node* root = createNode(10);
-
-    // Create left and right children
-    root->left = createNode(20);
-    root->right = createNode(30);
-
-    // Print the tree nodes
-    printf("Root: %d\n", root->data);
-    printf("Left Child: %d\n", root->left->data);
-    printf("Right Child: %d\n", root->right->data);
+    struct node *temp, *templeft, *tempright;
+    temp=create();
+    templeft= create();
+    tempright= create();
+    root = temp;
+    root->left = templeft;
+    root->right = tempright;
+    root->right->left = create();
+    inorder(root);
+    printf("\n");
+    preorder(root);
+    printf("\n");
+    postorder(root);
+    printf("\n");
 }
 
